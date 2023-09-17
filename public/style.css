@@ -1,0 +1,160 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(https://images.pexels.com/photos/186980/pexels-photo-186980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+::placeholder{
+    color: white;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.container-fluid{
+    display: flex;
+    /* background-color: white; */
+    margin-bottom: 15px;
+    width: 600px;
+    height: 600px;
+    margin-left: 453px;
+    margin-top: 70px;
+}
+.panel_1{
+    width: 65%;
+    color: white;
+    background-image: url(https://images.pexels.com/photos/259620/pexels-photo-259620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+.panel_2{
+    width: 35%;
+    background-color: transparent;
+}
+.panel_2::before{
+    content: '';
+    position: absolute;
+    height: 600px;
+    width: 210px;
+    background-color: rgba(0,0,0,0.5);
+}
+.time_ui{
+    position: relative;
+    top: 74%;
+    left: 4%;
+    font-size: 22px;
+}
+.temp_p1{
+    position: relative;
+    top: 61%;
+    left: 77%;
+}
+.date_ui{
+    position: relative;
+    top: 70%;
+    left: 4%;
+    font-size: medium;
+}
+.location_ui{
+    text-align: end;
+    padding: 15px;
+
+}
+.city_ui{
+    font-size: 27px;
+}
+.country_ui{
+    font-size: 16px;
+}
+.tag_line{
+    color: white;
+    position: relative;
+    top: 90%;
+    left: 580px;
+}
+.sun_icon{
+    position: relative;
+    top: 10px;
+    left: 77px;
+    animation: spin 5s linear infinite;
+}
+.haze{
+    position: relative;
+    top: 46px;
+    left: 7px;
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+}
+.search_icon{
+    position: relative;
+    top: 51px;
+    left: 27px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 2px;
+}
+.weather_info{
+    position: relative;
+    top: 11%;
+    left: 17px;
+    color: white;
+    font-size: 15px;
+}
+input[type="text"]{
+    width: 110px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    position: relative;
+    top: 40px;
+    left: 28px;
+    padding: 5px;
+}
+.location_2{
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 58px;
+    left: 55px;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;color: white;
+
+}
+.temp{
+    padding-right: 60px;
+}
+.humid{
+    padding-right: 77px;
+    padding-top: 10px;
+}
+.visib{
+    padding-right: 58px;
+}
+.wind_speed{
+    padding-right: 48px;
+
+}
+.value{
+    border-bottom: 1px solid white;
+}
+.hr{
+    border-bottom: 1px solid white;
+    
+}
+.info{
+    padding: 5px 0px 5px 0px;
+}
+.haze_hr{
+    position: relative;
+    top: 43px;
+}
+@keyframes spin {
+    100%{transform: rotate(360deg);}
+    /* 50%{transform: rotate(360deg);}
+    75%{transform: rotate(360deg);} */
+    /* 100%{transform: rotate(360deg);} */
+}
+
