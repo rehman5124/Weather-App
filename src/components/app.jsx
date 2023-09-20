@@ -98,7 +98,7 @@ export default function App() {
         //         console.log(err);
         //     });
 
-        setTemp(Math.floor(data.temp));
+        setTemp(Math.floor(data.temp) + "°c");
         setHumidity(Math.floor(data.humidity));
         setVisibility(Math.floor(data.visibility));
         setWSpeed(Math.floor(data.wind_speed));
@@ -118,7 +118,7 @@ export default function App() {
                 </div>
                 <h3 className="time_ui"><Time /></h3>
                 <h4 className="date_ui">{day + "," + " "  + date + " " + month + " " + year}</h4>
-                <h1 className="temp_p1">{temp}°c</h1>
+                <h1 className="temp_p1">{temp}</h1>
             </div>
             <div className="panel_2">
                 <WbSunnyRoundedIcon sx={{ fontSize: 60, color: "white" }} className="sun_icon"/>
@@ -129,7 +129,7 @@ export default function App() {
                     <span className="location_2">{nameOfCity}</span>
                 </div>
                 <div className="weather_info">
-                    <div className="info"><span className="temp hr">Temperature</span><span className="value">{temp}°c</span> </div>
+                    <div className="info"><span className="temp hr">Temperature</span><span className="value">{temp}</span> </div>
                     <div className="info"><span className="w_speed hr">wind_speed</span><span className="value">{wSpeed} m/s</span>  </div>
                     <div className="info"><span className="visib hr">Visibility</span><span className="value">{Visibility} m</span> </div>
                     <div className="info"><span className="humid hr">Humidity</span><span className="value">{humidity}%</span> </div>
