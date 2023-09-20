@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 API_KEY
-const API_KEY = "5710b099a08fb0bddefe27fd352f6ed3";
 
 API_CALL
 
